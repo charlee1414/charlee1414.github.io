@@ -47,6 +47,34 @@
             background-color: #333;
             color: #fff;
         }
+		div.dropdown{
+				position:relative;
+				display:inline-block;
+			}
+			.pg_cn{
+				display:none;
+				position:absolute;
+				background-color:#f1f1f1;
+				min-width:160px;
+				overflow:auto;
+				border-radius:2.5px;
+				box-shadow:0px 8px 16px 0px rgba(0,0,0,.2);
+				z-index:1;
+				offset-position:80px 125px;
+				offset-anchor:center;
+				offset-path:ray(90deg);
+			}
+			.pg_cn a{
+				z-index:10;
+				user-select:none;
+				color:black;
+				font-weight:initial;
+				padding:12px 16px;
+				text-decoration:none;
+				display:block;
+			}
+			.dropdown a:hover{background-color:#ddd;}
+			.show{display:block}
     </style>
 </head>
 
@@ -58,14 +86,20 @@
 
     <nav>
         <a href="#">SOURCE</a>
-        <a href="#">LINKS</a>
+        <div class=dropdown onclick="showPages()">LINKS
+			<div id=page_list class=pg_cn>
+				<a>Page 1</a>
+				<a>Page 2</a>
+				<a>Page 3</a>
+			</div>
+		</div>
         <a href="#">EXTRAS</a>
         <a href="#">CONTRIBUTORS</a>
     </nav>
 
     <main>
         <article>
-            <h2>Heading 1</h2>
+            <h2>Introduction</h2>
             <p>So,ething also here</p>
             <p>Put somethnig in here again </p>
         </article>
@@ -78,9 +112,23 @@
     </main>
 
     <footer>
-        <p>This blog is rightfully owned by Givirain's group. Any plagiarism will be handled accordingly, and possibly taken to court. (joke ra :))</p>
+        <p>This blog is rightfully owned by Givirain's group. Any niggers will be handled accordingly, and possibly taken to court. (joke ra :))</p>
     </footer>
-
+<script>
+function getById(id){
+	return document.getElementById(id);
+}
+function getByClass(id){
+	return Array.from(document.getElementsByClassName(id));
+}
+function showPages(){
+	getById("page_list").classList.toggle("show");
+}
+window.onclick=e=>{
+	let d=getByClass("pg_cn");
+	if(!e.target.matches(".dropdown"))d.forEach(e=>e.classList.contains("show")&&e.classList.remove("show"));
+}
+</script>
 </body>
 
 </html>
