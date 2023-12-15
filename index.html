@@ -2,9 +2,62 @@
 <html>
 
 <head>
-   
+  
+
+ 
     <title>Filipino pt </title>
     <style>
+	
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -33,8 +86,13 @@ header img {
             color: #fff;
             text-align: center;
             padding: 0.5em 0;
+            
         }
-
+		nav>ul{
+          display: inline-block;
+          align-items: center;
+          width: fit-content;
+		}
         nav a {
             color: #fff;
             text-decoration: none;
@@ -74,13 +132,20 @@ header img {
 
 
 
-    <nav>
-        <a href="#">HOME</a>
-        <a href="https://www.amnesty.org/en/what-we-do/freedom-of-expression/
-">SOURCE</a>
-        <a href="https://www.eastasiaforum.org/2021/11/08/media-freedom-is-the-lifeblood-of-philippine-democracy-and-its-under-threat/">ARTICLE</a>
-		 <a href="#">CONTRIBUTORS</a>
-
+    <nav align=center>
+       <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sources</a>
+    <div class="dropdown-content">
+      <a href="https://brilliantio.com/why-freedom-is-important/">Source 1</a>
+      <a href="https://tl.wikipedia.org/wiki/Araw_ng_Kalayaan">Source 2</a>
+      <a href="https://brilliantio.com/why-freedom-is-important/
+">Source 3</a>
+    </div>
+  </li>
+</ul>
     </nav>
 
     <main>
@@ -115,8 +180,13 @@ Sa bawat hakbang na ating ginagawa tungo sa kinabukasan, ang kalayaan ay isa sa 
 </h2>
             <p>Kalayaan— isang napakalawak at karaniwang pinag-uusapan na paksa. Isang salitang hindi lahat ang nagkakaroon. Isang salitang hanggang kasalukuyan ay ipinaglalaban pa rin. Ang kalayaan ay isang signipikatibo at mahalagang aspekto ng pagkakakilanlan ng isang tao. Nasasaklaw nito ang kakayahang gumawa ng mga pagpipilian, ipahayag ang sariling katangian, at ituloy ang mga mithiin ng walang labis na mga hadlang. Matatawag lamang na tunay ang kalayaan kapag nagagawa mo ang mga bagay na ito. Lumalampas ito sa kawalan ng mga pisikal na paghihigpit; umaabot ito sa larangan ng personal na pagpapahayag, pagpapasya sa sarili, at paghahangad ng isang kasiya-siyang buhay.
             <br/>
+            <h2> Nararapat nga bang magkaroon ang bawat isa ng kalayaan?</h2>
             
-            <br/>
+Bagama’t tayo ay nakamit na ang tagumpay at pagbabago, ang lipunan sa kasalukuyan ay naghihirap pa rin na maka asam ng hinahangad na kalayaan sa kani-kanilang mga buhay. Halimbawa lang nito ay ang makalaya sa kahirapan, kawalan ng hustisya, at iba pang mga aspekto. Ang pagkakaroon ng kalayaan ng bawat isa ay nakadepende sa sitwasyon at pangangailangan. 
+
+<br/>
+<br/>
+
             Sa pangkalahatan, itinuturing na pangunahing karapatan ng bawat isa ang kalayaan. Kasama rito ang pagtitipon, pagsasalita, at pagsali sa mga proseso ng lipunan. Ang kalayaan ay nagbibigay daan sa indibidwal na magkaroon ng kontrol sa kanilang sarili at makialam sa mga aspeto ng kanilang buhay.
 <br/>
 <br/>
@@ -150,6 +220,14 @@ Ang kapayapaan ay isang pundamental na sangkap para sa pagbuo ng masiglang at ma
 <p>Alinsunod dito, dahil sa pag-usbong ng teknolohiya at pag-unlad ng lipunan, lumalabas ang isang mahalagang isyu na nagiging balakid sa ating landas tungo sa pag-unlad: ang Kawalan ng Kalayaan sa Pagsasalita o Freedom of Speech. Ang kalayaang ito ay itinuturing na pundamental na karapatan ng bawat isa, ngunit sa ilalim ng ilang kalagayan, nararanasan itong mabawasan o mahamak.
 
 <br/>
+
+<h2> Kalayaan sa Pagsasalita o Freedom of Speech. </h2>
+
+<br/>
+Ang kalayaang ito ay itinuturing na pundamental na karapatan ng bawat isa, ngunit sa ilalim ng ilang kalagayan, nararanasan itong mabawasan o mahamak.
+
+<br/>
+
 <br/>
 Ang Kalayaan ng Pananalita ay isang pangunahing pundasyon ng isang lipunang demokratiko. Ito ay naglalayong magbigay daan sa malayang pagsasalita at pagpapahayag, nagtataguyod ng demokrasya, at nagtuturo sa atin ng paggalang sa iba't ibang opinyon. Gayunpaman, sa kabila ng kahalagahan nito, may mga sitwasyon at konteksto kung saan ito ay nakakasagabal o inililimita. 
 <br/>
